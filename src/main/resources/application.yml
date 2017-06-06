@@ -19,9 +19,9 @@ tomcat:
 
 
 druid:
-      url: jdbc:postgresql://172.26.100.227:5432/lportal?characterEncoding=UTF-8
-      username: usr_lportal
-      password: l9mesp!
+      url: jdbc:postgresql://localhost:5432/fchild?characterEncoding=UTF-8
+      username: postgres
+      password: 951102
       initial-size: 1
       min-idle: 1
       max-active: 20

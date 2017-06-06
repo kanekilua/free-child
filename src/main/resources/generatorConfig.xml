@@ -37,7 +37,7 @@
         生成model模型，对应的包路径，以及文件存放路径(targetProject)，targetProject可以指定具体的路径,如./src/main/java，
         也可以使用“MAVEN”来自动生成，这样生成的代码会在target/generatord-source目录下
         -->
-        <javaModelGenerator targetPackage="com.protal.das.beans.entity"
+        <javaModelGenerator targetPackage="com.bigplayer.beans"
                             targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
             <!-- 从数据库返回的值被清理前后的空格  -->
@@ -51,7 +51,7 @@
         </sqlMapGenerator>
 
         <!-- 对应的Mapper接口类文件 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.protal.das.dao"
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.bigplayer.dao"
                              targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
@@ -63,11 +63,11 @@
             <!--<generatedKey column="studentId" sqlStatement="Postgresql" identity="true"/>-->
         <!--</table>-->
 
-        <table tableName="group_" domainObjectName="Group"
+        <table tableName="company" domainObjectName="Company"
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false">
             <property name="useActualColumnNames" value="false"/>
-            <generatedKey column="groupid" sqlStatement="Postgresql" identity="true"/>
+            <generatedKey column="ID" sqlStatement="Postgresql" identity="true"/>
         </table>
 
         <!--<table tableName="spc_monitor" domainObjectName="Group">-->
