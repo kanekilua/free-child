@@ -1,0 +1,34 @@
+server:
+  port: 9090
+  context-path: /webapi
+
+spring:
+  application:
+    name: protal_extension
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    dbcp2:
+#      driver-class-name: org.postgresql.Driver
+#      url: jdbc:postgresql://172.26.100.227:5432/lportal?characterEncoding=UTF-8
+#      username: usr_lportal
+#      password: l9mesp!
+
+tomcat:
+  uri-encoding: UTF-8
+  remote-ip-header: x-forwarded-for
+
+
+druid:
+      url: jdbc:postgresql://172.26.100.227:5432/lportal?characterEncoding=UTF-8
+      username: usr_lportal
+      password: l9mesp!
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+
+mybatis:
+    type-aliases-package: com.protal.das.bean.entity
+    mapper-locations: classpath:mapper/*.xml
+
+
