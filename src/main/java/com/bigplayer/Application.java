@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Created by KILUA on 2017/2/28.
  */
 @SpringBootApplication
-@MapperScan(basePackages = "com.protal.das.dao")
+@MapperScan(basePackages = "com.bigplayer.dao")
 public class Application {
     public static void main(String args[]){
         SpringApplication.run(Application.class, args);

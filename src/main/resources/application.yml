@@ -1,5 +1,5 @@
 server:
-  port: 9090
+  port: 8098
   context-path: /webapi
 
 spring:
@@ -19,7 +19,7 @@ tomcat:
 
 
 druid:
-      url: jdbc:postgresql://localhost:5432/fchild?characterEncoding=UTF-8
+      url: jdbc:postgresql://localhost:5432/freechild?characterEncoding=UTF-8
       username: postgres
       password: 951102
       initial-size: 1
